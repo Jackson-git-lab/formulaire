@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion - Projet Odin</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Police Norse Bold -->
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Logo Odin" class="logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="image-credit">
+                Photo par <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> sur <a href="https://unsplash.com" target="_blank">Unsplash</a>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="intro-text">
+                <p>Ceci n'est pas un service en ligne réel. Vous savez, un service pour lequel vous auriez besoin de payer pour avoir accès. C'est juste un projet pour pratiquer le HTML et CSS. Mais ça a l'air plutôt bien, non ? Inscrivez-vous <em>maintenant</em> pour commencer.</p>
+                <p>Vous <em>ne le regretterez pas</em> !</p>
+            </div>
+            
+            <form class="signup-form" id="signupForm" action="exemple.com/path" method="post">
+                <h2>Commençons !</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">PRÉNOM</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">NOM</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">NUMÉRO DE TÉLÉPHONE</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">MOT DE PASSE</label>
+                        <input type="password" id="password" name="password" required class="password">
+                        <span class="error-message">* Les mots de passe doivent correspondre</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">CONFIRMER LE MOT DE PASSE</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required class="password">
+                    </div>
+                </div>
+            </form>
+            
+            <div class="form-footer">
+                <button type="submit" form="signupForm">Créer un compte</button>
+                <p>Vous avez déjà un compte ? <a href="#">Connectez-vous</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
